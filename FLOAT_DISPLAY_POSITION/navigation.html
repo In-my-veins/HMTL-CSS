@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Remove automatic margin&padding*/
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*  Styling nav container */
+	nav{
+	width:60%;
+	background-color: #ccc;
+	height: 40px;
+	margin: 0 auto;
+	text-align: left;
+}
+/*Remove list style type*/
+ ul{list-style-type: none;
+}
+/*Level 1 menu to left float
+Set width  and height of list item*/
+ .province li{
+	float:left;
+            }
+
+/*Set every list item width to 150px and line height of 40px*/
+li{
+	width:150px;
+	background-color: #ccc;
+height:40px;
+	line-height: 40px;
+        }
+li:hover{
+background-color: #000;
+}
+/*Remove underline on links
+Fit links in the available width width block display
+Padding to links */
+ a {
+	text-decoration: none;
+        display: block;
+	padding:0 5px;
+	color:#FFF;
+}
+
+
+/*
+Disable districts to be displayed on page load.
+Add relative position to district to enable shifting sectors
+*/
+.district li {
+display: none;
+position :relative
+}
+/*Display district when a province is hovered*/
+.province> li:hover .district li{
+display:block;
+
+
+} 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="province">
+                <li>
+                    <a href="#">Province 1
+                        <ul class="district">
+                            <li><a href="#">District 1</a></li>
+                            <li><a href="#">District 2</a></li>
+                            <li><a href="#">District 3</a></li>
+                            <li><a href="#">District 4</a></li>
+                            <li><a href="#">District 5</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Province 2
+                        <ul class="district">
+                            <li><a href="#">District 1</a></li>
+                            <li><a href="#">District 2</a></li>
+                            <li><a href="#">District 3</a></li>
+                            <li><a href="#">District 4</a></li>
+                            <li><a href="#">District 5</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Province 3
+                        <ul class="district">
+                            <li><a href="#">District 1</a></li>
+                            <li><a href="#">District 2</a></li>
+                            <li><a href="#">District 3</a></li>
+                            <li><a href="#">District 4</a></li>
+                            <li><a href="#">District 5</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Province 4
+                        <ul class="district">
+                            <li><a href="#">District 1</a></li>
+                            <li><a href="#">District 2</a></li>
+                            <li><a href="#">District 3</a></li>
+                            <li><a href="#">District 4</a></li>
+                            <li><a href="#">District 5</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+</html>
