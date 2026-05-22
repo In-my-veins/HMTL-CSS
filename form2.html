@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Form</title>
+    <style>
+        body{
+           background-color: dark gray;
+           height: 100vh;
+          font-family: Arial,sans-serif;
+           display: flex;
+           margin-left: 20px;
+           margin-right: 20px;
+
+        }
+        form{
+            background-color: white;
+            border: 1px solid;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            height: 70vh;
+            box-shadow: 0 0 15 rgba(o, 0, 0, 0.1);
+            padding: 20px;
+            }
+            .form-input{
+        padding: 10px;
+        margin-top: 5px;
+    
+}
+     input{
+        width: 100%;
+         }
+
+    </style>
+</head>
+<body>
+
+    <form action="register.php" method="post" >
+        <h2>Registration form</h2>
+     <div class="form-input">
+     <label for="firstname">Firstname *</label> <br>
+     <input type="text" id="firstname" name="firstname" ><br>
+     </div>
+     <div class="form-input">
+     <label for="lastname" >Lastname *</label><br>
+     <input type="text" name="lastname" id="lastname" ><br>
+     </div>
+     <div class="form-input">
+     <label for="email">Email *</label> <br>
+     <input type="email" name="email" id="name"> <br>
+     </div>
+     <div class="form-input">
+     <label for="password">Password</label><br>
+     <input type="password" id="password" name="password"><br>
+     </div>
+     <div>
+     <input type="checkbox" id="checkbox" name="checkbox">
+     <label for="checkbox"> I agree to the terms and conditions </label><br>
+     </div>
+     <div>
+     <input type="submit" value="Sign up">
+     <p>Already have an account? <a href="#">Sign in</a></p>
+     <P>Or sign in with</P>
+     <div class="social buttons">
+        <button type="button">Google</button>
+        <button type="button">Facebook</button>
+        <button type="button">Twitter</button>
+     </div>
+     </form>
+</body>
+</html>

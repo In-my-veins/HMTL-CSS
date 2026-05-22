@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: #333;
+    margin: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+form{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: blueviolet;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+input[type="text"],
+input[type="password"] 
+input[type="email"]   
+input[type="date"]
+textarea { 
+   width: 100%;
+   padding: 10px;
+   margin-top: 5px;
+}
+
+
+</style>
+</head>-
+<body>
+   
+    <section>
+ <form action="registration.php" method="post">
+    <h2>Registration form</h2>
+    <fieldset>
+    <legend>Personal information </legend>
+    <label for="name">Username</label><br>
+    <input type="text" name="username" id="name" placeholder="Enter your username"  required autofocus><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="Enter your password"  required><br>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter your email"required><br>
+    <label for="gender">Gender</label><br>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male" ><br>
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female" value="female"  ><br>
+    </fieldset>
+    <label for="subscribe">Subscribe</label><br>
+    <input type="checkbox" id="subscribe" name="subscribe" required><br>
+    <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="birthday" placeholder="Enter your date of birth" required><br>
+    <label for="country">Country</label>
+    
+    <select name="country" id="country"br>
+    <option value="Kenya">Kenya</option>
+    <option value="Rwanda">Rwanda</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Tanzania">Tanzania</option>
+    </select><br>
+    <label for="food">Food</label><br>
+    <input type="text" name="meat" id="food" value="meat" readonly> <br>
+    <label for="reset">Reset</label><br>
+    <input type="reset"><br>
+    <label for="textarea">Write something cool</label><br>
+    <textarea name="textarea" id="textarea"></textarea><br>
+    <label for="submit">Submit</label><br>
+    <input type="submit" ><br>
+  </form>
+  </section>
+</html>  

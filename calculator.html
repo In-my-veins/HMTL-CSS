@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h2>🧮 Simple Calculator</h2>
+
+  <!-- The display -->
+  <input id="display" type="text" readonly />
+
+  <br><br>
+
+  <!-- The buttons -->
+  <button onclick="addToDisplay('1')">1</button>
+  <button onclick="addToDisplay('2')">2</button>
+  <button onclick="addToDisplay('3')">3</button>
+  <button onclick="addToDisplay('+')">+</button>
+  <br>
+
+  <button onclick="addToDisplay('4')">4</button>
+  <button onclick="addToDisplay('5')">5</button>
+  <button onclick="addToDisplay('6')">6</button>
+  <button onclick="addToDisplay('-')">-</button>
+  <br>
+
+  <button onclick="addToDisplay('7')">7</button>
+  <button onclick="addToDisplay('8')">8</button>
+  <button onclick="addToDisplay('9')">9</button>
+  <button onclick="addToDisplay('*')">*</button>
+  <br>
+
+  <button onclick="addToDisplay('0')">0</button>
+  <button onclick="addToDisplay('/')">/</button>
+  <button onclick="calculate()">=</button>
+  <button onclick="clearDisplay()">C</button>
+
+  <script>
+    // Add whatever button is clicked to the display
+    function addToDisplay(value) {
+      document.getElementById("display").value += value;
+    }
+
+    // Clear the display
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+
+    // Calculate the result
+    function calculate() {
+      let display = document.getElementById("display");
+      display.value = eval(display.value); // eval does the math for us
+    }
+  </script>
+</body>
+</html>

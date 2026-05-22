@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       body{
+        background-color:rgb(220, 220, 220);
+         max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        display: flex;
+        height: 100vh;
+        margin: 0px;
+       }
+       form{
+       background-color: white;
+       padding: 20px;
+       width: 300px;
+       border: ;
+       }
+       .name-group{
+        margin-bottom: 5px;
+       }
+       .name-group label{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+       }
+       .name-group input {
+        background-color: lightblue ;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+       }
+       .gender{
+        margin-bottom: 15px;
+       }
+    </style>
+</head>
+<body>
+<form action="registration.php" method="post">
+<h3>Student access information</h3>
+  <div class="name-group">
+    <label for="firstname">Firstname</label><br>
+    <input type="text" name="firstname" id="firstname" > <br>
+  </div>
+  <div class="name-group">
+    <label for="lastname">Lastname</label> <br>
+    <input type="text" name="lastname" id="lastname">
+  </div>
+  <div class="name-group">
+    <label for="email">email</label>
+    <input type="email" id="email" name="email"><br>
+  </div>
+  <div class="gender">
+    <label for="gender">Gender</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </div>
+  <div>
+    <label for="languages">Languages</label><br>
+    <input type="checkbox" value="Kinyarwanda" name="languages" id="kinyarwanda">
+    <label for="kinyarwanda">Kinyarwanda</label><br>
+    <input type="checkbox" value="kiswahili" name="languages">
+    <label for="kiswahili">Kiswahili</label><br>
+    <input type="checkbox" value="english" id="english" name="languages">
+    <label for="english">English</label><br>
+    <input type="checkbox" name="french" id="french" name="languages">
+    <label for="french">French</label><br>
+  </div>
+  <div>
+    <label for="level">Level</label><br>
+    <select name="level" id="level">
+        <option value="senior2">Senior1
+        </option><br>
+        <option value="senior2">Senior2</option>
+    </select> <br>
+  </div>
+  <div>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password"><br>
+   <label for="request">Reqeuest</label><br>
+    <textarea name="Reqeuest" id=""></textarea><br>
+    </div>
+    <div>
+    <label for="submit">Submit</label><br>
+    <input type="submit" id="submit" name="submit">
+    </div>
+ </form>
+</body>
+</html>
