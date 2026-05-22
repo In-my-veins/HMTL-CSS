@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:80%;
+    margin:20px auto;
+    text-align:center;
+    color:white;
+    font-size:25px;
+}
+
+/* HEADER */
+#header{
+    background:#444;
+    height:80px;
+    line-height:80px;
+}
+
+/* A B C */
+.a,.b,.c{
+    width:25%;
+    height:150px;
+    float:left;
+    line-height:150px;
+}
+
+.a{
+    background:orange;
+}
+
+.b{
+    background:green;
+}
+
+.c{
+    background:blue;
+}
+
+/* D */
+.d{
+    width:25%;
+    height:300px;
+    float:right;
+    background:#4a7bd0;
+    line-height:300px;
+}
+
+/* E */
+.e{
+    width:75%;
+    height:75px;
+    float:left;
+    background:#666;
+    line-height:75px;
+}
+
+/* F */
+.f{
+    width:75%;
+    height:75px;
+    float:left;
+    background:darkblue;
+    line-height:75px;
+}
+
+/* FOOTER */
+#footer{
+    clear:both;
+    background:red;
+    height:80px;
+    line-height:80px;
+}
+    </style>
+</head>
+<body>
+
+    <div id="header">H</div>
+
+    <div class="a">Content A</div>
+    <div class="b">Content B</div>
+    <div class="c">Content C</div>
+
+    <div class="d">Content D</div>
+
+    <div class="e">Content E</div>
+
+    <div class="f">Content F</div>
+
+    <div id="footer">Content G</div>
+
+</body>
+</html>
